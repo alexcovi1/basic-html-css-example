@@ -1,63 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Page</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <h1> Page title</h1>
+    <div class="box">
+        <div class="title-section">
+          <h1>Page Title</h1>
+        </div>
+        <div class="menu-section">
+          <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
 
-        <p>Hello everyone this is my website</p>
-        <p> check this three houses which do you prefer?</p>
-    </header>
+  <!-- Grande box grigio scuro con due box all'interno -->
+  <div class="large-box">
+    <!-- Box di sinistra con articolo e immagini -->
+    <div class="left-box">
+      <!-- Articolo -->
+      <div class="white-box article">
+        <h2>Article One</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      </div>
 
-    <nav aria-label="primary navigation">
-        <ol>
-            <li> <a href="#">house 1</a></li>
-            <li> <a href="#">house 2</a></li>
-            <li> <a href="#">house 3</a></li>
-        </ol>
-    </nav>
+      <!-- Tre box bianchi per le immagini -->
+      <div class="white-box">
+        <img src="image1.jpg" alt="Image 1">
+      </div>
+      <div class="white-box">
+        <img src="image2.jpg" alt="Image 2">
+      </div>
+      <div class="white-box">
+        <img src="image3.jpg" alt="Image 3">
+      </div>
+    </div>
 
-    <main>
-        <section>
-            <h2> This is a example </h2>
-            <img src="#" alt="flowers in Vancouer">
-            <!-- I hope this flowers are pretty to see-->
-        </section>
+    <!-- Box di destra con progetti e date -->
+    <div class="right-box">
+      <div class="white-box">
+        <h2>Projects</h2>
+      </div>
+      <div class="white-box">
+        <ul class="date-list">
+          <li>September</li>
+          <li>October</li>
+          <li>November</li>
+          <li>December</li>
+          <li>January</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-        <article>
-            <h3> example of artice</h3>
-            <p> words of a story</p>
-            <p>the event of the story will be <time datetime="2024-12-25">the 25 of december</time></p>
-        </article>
-
-        <nav arial-label="secondary navigation">
-            <ol>
-                <li> <a href="#">extra info</a></li>
-                <li> <a href="#">questions </a></li>
-                <li> <a href="#">extra info3</a></li>
-            </ol>
-        </nav>
-
-
-        <aside>
-            <h4>more info to page</h4>
-            <p>ine two three</p>
-        </aside>
-    </main>
-
-    <footer>
-        <p>Copyright&copy; and info </p>
-        <!--for the escaped characters I asked help to chatgpt to understand what they were-->
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-box">
+      <p>2024 my webpage | <a href="#">Privacy Policy</a></p>
+    </div>
+  </footer>
 </body>
-
-
 </html>
-
