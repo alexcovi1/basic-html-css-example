@@ -1,27 +1,24 @@
 /* Stile per il box generale che contiene il titolo e la lista */
 .box {
-    width: 80%; /* Box più largo */
+    width: 90%; /* Box più largo */
     margin: 20px auto;
-    border-radius: 10px;
-    overflow: hidden; /* Nasconde eventuali elementi fuori dai bordi */
   }
   
   /* Stile per la sezione del titolo */
   .title-section {
-    background-color: #333; /* Grigio scuro */
+    background-color: #a5a5a5; /* Grigio scuro */
     padding: 20px;
     text-align: center;
   }
   
   h1 {
-    color: white; /* Colore bianco per il titolo */
-    font-weight: bold; /* Testo in grassetto */
+    color: rgb(7, 7, 7); /* Colore bianco per il titolo */
     margin: 0;
   }
   
   /* Stile per la sezione della lista (parte inferiore) */
   .menu-section {
-    background-color: #666; /* Colore grigio più chiaro */
+    background-color: #dfdede; /* Colore grigio più chiaro */
     padding: 20px;
     text-align: center; /* Centrato */
   }
@@ -34,14 +31,13 @@
   
   /* Stile per i link della lista */
   .menu li {
-    display: inline-block; /* Mostra i link in fila */
+    display: block; /* Mostra i link in fila */
     margin: 0 10px; /* Spazio tra i link */
   }
   
   .menu li a {
-    text-decoration: none; /* Rimuove la sottolineatura */
     color: blue; /* Colore blu per i link */
-    font-size: 18px;
+    font-size: 12px;
     font-weight: bold; /* Grassetto */
   }
   
@@ -50,10 +46,9 @@
     background-color: #333; /* Grigio scuro */
     padding: 20px;
     display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: 20px auto;
-    border-radius: 10px;
+    width: 90%;
+    margin: 10px auto;
+    
   }
   
   /* Box di sinistra e destra */
