@@ -2,126 +2,141 @@
 .box {
     width: 90%; /* Box più largo */
     margin: 20px auto;
-  }
-  
-  /* Stile per la sezione del titolo */
-  .title-section {
+}
+
+/* Stile per la sezione del titolo */
+.title-section {
     background-color: #a5a5a5; /* Grigio scuro */
     padding: 20px;
     text-align: center;
-  }
-  
-  h1 {
+}
+
+h1 {
     color: rgb(7, 7, 7); /* Colore bianco per il titolo */
     margin: 0;
-  }
-  
-  /* Stile per la sezione della lista (parte inferiore) */
-  .menu-section {
+}
+
+/* Stile per la sezione della lista (parte inferiore) */
+.menu-section {
     background-color: #dfdede; /* Colore grigio più chiaro */
     padding: 20px;
     text-align: center; /* Centrato */
-  }
-  
-  .menu {
-    list-style-type: none; /* Rimuove i puntini */
+}
+
+.menu {
     padding: 0;
     margin: 0;
-  }
-  
-  /* Stile per i link della lista */
-  .menu li {
+    list-style-type: disc; /* Aggiunge i puntini nella lista */
+    display: block; /* Allinea la lista orizzontalmente */
+}
+
+.menu li {
     display: block; /* Mostra i link in fila */
     margin: 0 10px; /* Spazio tra i link */
-  }
-  
-  .menu li a {
+}
+
+.menu li a {
     color: blue; /* Colore blu per i link */
     font-size: 12px;
     font-weight: bold; /* Grassetto */
-  }
-  
-  /* Grande box grigio scuro che contiene due sezioni */
-  .large-box {
+}
+
+/* Grande box grigio scuro che contiene due sezioni */
+.large-box {
     background-color: #333; /* Grigio scuro */
     padding: 20px;
     display: flex;
     width: 90%;
     margin: 10px auto;
-    
-  }
-  
-  /* Box di sinistra e destra */
-  .left-box, .right-box {
-    background-color: #666; /* Grigio per i box interni */
+}
+
+/* Box di sinistra e destra */
+.left-box {
+    background-color: #666; /* Grigio per il box interno */
     padding: 10px;
-    width: 48%; /* Divisi a metà */
-    border-radius: 10px;
-  }
-  
-  /* Stile per i box bianchi con bordi gialli */
-  .white-box {
+    width: 65%; /* Box di sinistra più largo */
+}
+
+.right-box {
+    background-color: #666; /* Grigio per il box interno */
+    padding: 10px;
+    width: 30%; /* Box di destra più stretto */
+}
+
+/* Stile per i box bianchi con bordi gialli */
+.white-box {
     background-color: white;
     border: 2px solid yellow; /* Bordo giallo sottile */
     margin-bottom: 10px;
     padding: 10px;
-    border-radius: 5px;
-  }
-  
-  /* Articolo */
-  .article h2 {
+}
+
+/* Articolo */
+.article h2 {
     margin: 0;
     color: black;
-  }
-  
-  /* Immagini */
-  .white-box img {
-    width: 100%;
+}
+
+/* Immagini */
+.img-container {
+    display: flex; /* Usa flexbox per allineare le immagini */
+    justify-content: space-between; /* Spazio tra le immagini */
+    margin-top: 10px; /* Margine sopra le immagini */
+}
+
+.img-container .white-box {
+    flex: 1; /* Rende ogni box per l'immagine uguale */
+    margin-right: 10px; /* Spazio tra le immagini */
+}
+
+.img-container .white-box:last-child {
+    margin-right: 0; /* Rimuovi margine per l'ultimo box */
+}
+
+.white-box img {
+    width: 100%; /* Immagini che occupano l'intero box */
     height: auto;
     display: block;
-  }
-  
-  /* Stile per i progetti */
-  .right-box h2 {
+}
+
+/* Stile per i progetti */
+.right-box h2 {
     margin: 0;
     color: black;
-  }
-  
-  /* Lista delle date */
-  .date-list {
-    list-style-type: none; /* Rimuovi puntini dalla lista */
-    padding: 0;
-  }
-  
-  .date-list li {
-    margin-bottom: 5px;
+}
+
+/* Lista delle date */
+.date-list {
+    padding: 0; /* Rimuovi padding */
+    margin: 0; /* Rimuovi margine */
+}
+
+.date-list li {
+    margin-bottom: 15px;
     color: black;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #333; /* Grigio scuro */
-    padding: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #dfdede; /* Grigio chiaro per il footer */
+    padding: 30px 0;
     text-align: center;
-    margin-top: 20px;
-  }
-  
-  /* Box del footer */
-  .footer-box {
-    background-color: #666; /* Grigio scuro per il footer */
-    padding: 10px;
-    display: inline-block;
-    border-radius: 5px;
-  }
-  
-  /* Stile per il testo del footer */
-  footer p {
-    color: white;
-    margin: 0;
-  }
-  
-  /* Link nel footer */
-  footer a {
-    color: blue; /* Colore blu per il link */
+    margin-top: 20px; /* Spazio sopra il footer */
+}
+
+.footer-box {
+    width: 90%; /* Stessa larghezza del resto */
+    margin: 0 auto; /* Centrato */
+}
+
+/* Stile per il testo del footer */
+footer p {
+    color: black; /* Colore testo footer */
+    margin: 5; /* Margine */
+}
+
+/* Link nel footer */
+footer a {
+    color: rgb(48, 74, 101); /* Colore blu per il link */
     text-decoration: none; /* Nessuna sottolineatura */
-  }
+}
