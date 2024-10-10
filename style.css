@@ -20,20 +20,24 @@ h1 {
 /* Stile per la sezione della lista (parte inferiore) */
 .menu-section {
     background-color: #dfdede; /* Colore grigio più chiaro */
-    padding: 3px;
+    padding: 10px;
     text-align: center; /* Centrato */
 }
 
+ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+/* Aggiungi il seguente stile per i punti della lista */
 .menu {
     padding: 0;
     margin: 0;
-    display: block; /* Allinea la lista orizzontalmente */
 }
 
 .menu li {
-    display: block; /* Mostra i link in fila */
     margin: 0 10px; /* Spazio tra i link */
-    
+    list-style: disc; /* Aggiungi i pallini */
 }
 
 .menu li a {
@@ -41,7 +45,6 @@ h1 {
     font-size: 10px;
     font-weight: bold; /* Grassetto */
     text-decoration: none;
-    
 }
 
 /* Grande box grigio scuro che contiene due sezioni */
@@ -51,23 +54,21 @@ h1 {
     display: flex;
     width: 90%;
     margin: 10px auto;
-  
 }
 
 /* Box di sinistra e destra */
 .left-box {
-    background-color: #666; /* Grigio per il box interno */
+    background-color: #666; /* Grigio per il box interno (sinistra) */
     padding: 10px;
     width: 65%; /* Box di sinistra più largo */
     float: left;
 }
 
 .right-box {
-    background-color: #666; /* Grigio per il box interno */
+    background-color: #666; /* Cambiato a un grigio più chiaro per la box di destra */
     padding: 10px;
     width: 30%; /* Box di destra più stretto */
     float: right;
-    
 }
 
 /* Stile per i box bianchi con bordi gialli */
@@ -85,7 +86,6 @@ h1 {
     text-align: center; /* Centrato */
 }
 
-
 /* Immagini */
 .img-container {
     display: flex; /* Usa flexbox per allineare le immagini */
@@ -99,7 +99,6 @@ h1 {
     height: 70px;
     text-align: center; /* Centrato */
 }
-
 
 .img-container .white-box:last-child {
     margin-right: 0; /* Rimuovi margine per l'ultimo box */
@@ -115,6 +114,7 @@ h1 {
 .right-box h2 {
     margin: 0;
     color: black;
+    text-align: center;
 }
 
 /* Lista delle date */
@@ -122,21 +122,20 @@ h1 {
     padding: 0; /* Rimuovi padding */
     margin: 10px; /* Rimuovi margine */
     height: 155px;
-    
 }
 
 .date-list li {
     margin-bottom: 16px;
     color: black;
     text-align: left;
-   margin-bottom: 5px;
-   line-height: 15px;
+    margin-bottom: 5px;
+    line-height: 15px;
 }
 
 /* Footer */
 footer {
     background-color: #dfdede; /* Grigio chiaro per il footer */
-    padding: 30px ;
+    padding: 30px;
     text-align: center;
     margin-top: 30px; /* Spazio sopra il footer */
 }
