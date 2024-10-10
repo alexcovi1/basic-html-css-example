@@ -7,38 +7,41 @@
 /* Stile per la sezione del titolo */
 .title-section {
     background-color: #a5a5a5; /* Grigio scuro */
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
 h1 {
     color: rgb(7, 7, 7); /* Colore bianco per il titolo */
     margin: 0;
+    font-weight: 50;
 }
 
 /* Stile per la sezione della lista (parte inferiore) */
 .menu-section {
     background-color: #dfdede; /* Colore grigio più chiaro */
-    padding: 20px;
+    padding: 3px;
     text-align: center; /* Centrato */
 }
 
 .menu {
     padding: 0;
     margin: 0;
-    list-style-type: disc; /* Aggiunge i puntini nella lista */
     display: block; /* Allinea la lista orizzontalmente */
 }
 
 .menu li {
     display: block; /* Mostra i link in fila */
     margin: 0 10px; /* Spazio tra i link */
+    
 }
 
 .menu li a {
-    color: blue; /* Colore blu per i link */
-    font-size: 12px;
+    color: rgb(82, 82, 248); /* Colore blu per i link */
+    font-size: 10px;
     font-weight: bold; /* Grassetto */
+    text-decoration: none;
+    
 }
 
 /* Grande box grigio scuro che contiene due sezioni */
@@ -48,6 +51,7 @@ h1 {
     display: flex;
     width: 90%;
     margin: 10px auto;
+  
 }
 
 /* Box di sinistra e destra */
@@ -55,18 +59,21 @@ h1 {
     background-color: #666; /* Grigio per il box interno */
     padding: 10px;
     width: 65%; /* Box di sinistra più largo */
+    float: left;
 }
 
 .right-box {
     background-color: #666; /* Grigio per il box interno */
     padding: 10px;
     width: 30%; /* Box di destra più stretto */
+    float: right;
+    
 }
 
 /* Stile per i box bianchi con bordi gialli */
 .white-box {
-    background-color: white;
-    border: 2px solid yellow; /* Bordo giallo sottile */
+    background-color: rgb(221, 220, 220);
+    border: 2px solid rgb(242, 242, 117); /* Bordo giallo sottile */
     margin-bottom: 10px;
     padding: 10px;
 }
@@ -113,25 +120,31 @@ h1 {
 /* Lista delle date */
 .date-list {
     padding: 0; /* Rimuovi padding */
-    margin: 0; /* Rimuovi margine */
+    margin: 10px; /* Rimuovi margine */
+    height: 155px;
+    
 }
 
 .date-list li {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
     color: black;
+    text-align: left;
+   margin-bottom: 5px;
+   line-height: 15px;
 }
 
 /* Footer */
 footer {
     background-color: #dfdede; /* Grigio chiaro per il footer */
-    padding: 30px 0;
+    padding: 30px ;
     text-align: center;
-    margin-top: 20px; /* Spazio sopra il footer */
+    margin-top: 30px; /* Spazio sopra il footer */
 }
 
 .footer-box {
-    width: 90%; /* Stessa larghezza del resto */
+    width: 80%; /* Stessa larghezza del resto */
     margin: 0 auto; /* Centrato */
+    height: 5px;
 }
 
 /* Stile per il testo del footer */
@@ -142,6 +155,6 @@ footer p {
 
 /* Link nel footer */
 footer a {
-    color: rgb(48, 74, 101); /* Colore blu per il link */
+    color: rgb(27, 97, 172); /* Colore blu per il link */
     text-decoration: none; /* Nessuna sottolineatura */
 }
